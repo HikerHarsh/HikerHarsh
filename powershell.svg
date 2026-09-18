@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="100%" height="100%">
+  <!-- Window Frame -->
+  <rect width="800" height="330" rx="8" fill="#0A0A0A" />
+  
+  <!-- Title Bar -->
+  <path d="M 0 8 Q 0 0 8 0 L 792 0 Q 800 0 800 8 L 800 30 L 0 30 Z" fill="#EAEAEA" />
+  <text x="32" y="20" font-family="Segoe UI, sans-serif" font-size="13" fill="#000000">Administrator: Windows PowerShell</text>
+  
+  <!-- Better Terminal Logo -->
+  <rect x="10" y="7" width="16" height="16" fill="#0A0A0A" />
+  <path d="M 12 11 L 16 15 L 12 19 M 16 19 L 22 19" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+
+  <!-- Controls -->
+  <rect x="755" y="0" width="45" height="30" fill="#EAEAEA" />
+  <path d="M 770 10 L 784 24 M 784 10 L 770 24" stroke="#000000" stroke-width="1.5" />
+  <rect x="710" y="0" width="45" height="30" fill="#EAEAEA" />
+  <rect x="725" y="10" width="14" height="14" fill="none" stroke="#000000" stroke-width="1.5" />
+  <rect x="665" y="0" width="45" height="30" fill="#EAEAEA" />
+  <line x1="675" y1="17" x2="689" y2="17" stroke="#000000" stroke-width="1.5" />
+  
+  <g font-family="Consolas, 'Courier New', monospace" font-size="14.5" fill="#EEEDF0">
+    <defs>
+      <clipPath id="cmd1">
+        <rect x="0" y="35" width="0" height="35">
+          <animate attributeName="width" values="0;780" dur="2s" fill="freeze" />
+        </rect>
+      </clipPath>
+      <clipPath id="output">
+        <rect x="0" y="70" width="0" height="200">
+          <animate attributeName="width" values="0;0;780" keyTimes="0;0.99;1" dur="2.5s" fill="freeze" />
+        </rect>
+      </clipPath>
+      <clipPath id="cmd2">
+        <rect x="0" y="270" width="0" height="35">
+          <animate attributeName="width" values="0;0;780" keyTimes="0;0.99;1" dur="3s" fill="freeze" />
+        </rect>
+      </clipPath>
+    </defs>
+
+    <!-- Command execution -->
+    <text x="15" y="60" clip-path="url(#cmd1)">
+      <tspan fill="#EEEDF0">PS C:\Users\Harsh&gt; </tspan>
+      <tspan fill="#EEEDF0">Invoke-RestMethod </tspan>
+      <tspan fill="#FFD68F">"https://hiker.dev/profile.json"</tspan>
+    </text>
+
+    <!-- Output JSON like response -->
+    <g clip-path="url(#output)">
+      <text x="15" y="95"><tspan fill="#88C0D0">Name        </tspan>: Harsh</text>
+      <text x="15" y="120"><tspan fill="#88C0D0">Role        </tspan>: Full Stack Developer</text>
+      <text x="15" y="145"><tspan fill="#88C0D0">Environment </tspan>: Node.js, Python, TypeScript</text>
+      <text x="15" y="170"><tspan fill="#88C0D0">Passions    </tspan>: @(</text>
+      <text x="15" y="195">                 <tspan fill="#FFD68F">"Building Scalable Web Apps"</tspan>,</text>
+      <text x="15" y="220">                 <tspan fill="#FFD68F">"Deep diving into AI Systems"</tspan>,</text>
+      <text x="15" y="245">                 <tspan fill="#FFD68F">"Open Source Contributions"</tspan></text>
+      <text x="15" y="270">              )</text>
+    </g>
+
+    <!-- New Command Prompt -->
+    <text x="15" y="305" clip-path="url(#cmd2)">
+      <tspan fill="#EEEDF0">PS C:\Users\Harsh&gt; </tspan>
+      <tspan fill="#EEEDF0">
+        _
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+      </tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="160" y="10" rx="12" fill="#121214" stroke="#27272A" stroke-width="1.5" />
+  
+  <text x="30" y="45" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#F4F4F5">
+    How I write code
+  </text>
+  
+  <text x="770" y="45" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#10B981" text-anchor="end">
+    Always shipping
+  </text>
+
+  <!-- Animated Progress Bar -->
+  <rect x="30" y="70" width="740" height="6" rx="3" fill="#27272A" />
+  <rect x="30" y="70" width="0" height="6" rx="3" fill="url(#neon-green)">
+    <animate attributeName="width" values="0; 600; 580; 650; 600" dur="10s" ease="ease-in-out" repeatCount="indefinite" />
+  </rect>
+  <circle cx="30" cy="73" r="6" fill="#34D399" stroke="#121214" stroke-width="2">
+    <animate attributeName="cx" values="30; 630; 610; 680; 630" dur="10s" ease="ease-in-out" repeatCount="indefinite" />
+  </circle>
+
+  <!-- KPI Blocks -->
+  
+  <!-- Block 1 -->
+  <g transform="translate(30, 100)">
+    <rect width="180" height="50" rx="6" fill="#18181B" stroke="#27272A" />
+    <rect x="10" y="15" width="20" height="20" rx="4" fill="#064E3B" />
+    <svg x="11" y="16" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+      <circle cx="12" cy="12" r="3"></circle>
+    </svg>
+    <text x="40" y="24" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#F4F4F5">Readability</text>
+    <text x="40" y="40" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" fill="#A1A1AA">Code is for humans</text>
+    <circle cx="165" cy="25" r="4" fill="#10B981" />
+  </g>
+
+  <!-- Block 2 -->
+  <g transform="translate(220, 100)">
+    <rect width="180" height="50" rx="6" fill="#18181B" stroke="#27272A" />
+    <rect x="10" y="15" width="20" height="20" rx="4" fill="#1E3A8A" />
+    <svg x="11" y="16" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="22" y1="2" x2="11" y2="13"></line>
+      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+    </svg>
+    <text x="40" y="24" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#F4F4F5">Shipping</text>
+    <text x="40" y="40" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" fill="#A1A1AA">Deploying often</text>
+    <circle cx="165" cy="25" r="4" fill="#10B981" />
+  </g>
+  
+  <!-- Block 3 -->
+  <g transform="translate(410, 100)">
+    <rect width="180" height="50" rx="6" fill="#18181B" stroke="#27272A" />
+    <rect x="10" y="15" width="20" height="20" rx="4" fill="#4C1D95" />
+    <svg x="11" y="16" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle>
+      <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+    </svg>
+    <text x="40" y="24" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#F4F4F5">Curiosity</text>
+    <text x="40" y="40" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" fill="#A1A1AA">Learning new tech</text>
+    <circle cx="165" cy="25" r="4" fill="#10B981" />
+  </g>
+
+  <!-- Block 4 -->
+  <g transform="translate(600, 100)">
+    <rect width="170" height="50" rx="6" fill="#18181B" stroke="#27272A" />
+    <rect x="10" y="15" width="20" height="20" rx="4" fill="#7F1D1D" />
+    <svg x="11" y="16" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+    </svg>
+    <text x="40" y="24" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#F4F4F5">Performance</text>
+    <text x="40" y="40" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="11" fill="#A1A1AA">Keeping it snappy</text>
+    <circle cx="155" cy="25" r="4" fill="#10B981" />
+  </g>
+</svg>

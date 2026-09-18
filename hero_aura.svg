@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
+  <defs>
+    <radialGradient id="aura-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="aura-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9D00FF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#9D00FF" stop-opacity="0" />
+    </radialGradient>
+    <clipPath id="card-clip">
+      <rect width="800" height="250" rx="16" />
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="250" rx="16" fill="#09090B" />
+  
+  <g clip-path="url(#card-clip)">
+    <!-- Aura 1 -->
+    <circle cx="200" cy="125" r="300" fill="url(#aura-cyan)">
+      <animate attributeName="cx" values="100;400;100" dur="12s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="50;200;50" dur="18s" repeatCount="indefinite" />
+    </circle>
+    <!-- Aura 2 -->
+    <circle cx="600" cy="125" r="350" fill="url(#aura-purple)">
+      <animate attributeName="cx" values="700;300;700" dur="15s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="200;0;200" dur="20s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Foreground -->
+  <text x="400" y="115" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="44" font-weight="700" fill="#F4F4F5" text-anchor="middle">
+    Hey, I'm Harsh
+  </text>
+  <text x="400" y="165" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#A1A1AA" text-anchor="middle">
+    Writing code, debugging life, and building cool stuff on the internet.
+  </text>
+</svg>
